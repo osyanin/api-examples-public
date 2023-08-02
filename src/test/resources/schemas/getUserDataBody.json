@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome8",
+  "definitions": {
+    "Welcome8": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "statusID": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": ["null", "string"]
+        },
+        "lastName": {
+          "type": ["null", "string"]
+        },
+        "tgUsername": {
+          "type": ["null", "string"]
+        },
+        "tgVerified": {
+          "type": "boolean"
+        },
+        "tgUsernameReserve": {
+          "type": ["null", "string"]
+        },
+        "tgReserveVerified": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": ["null", "string"]
+        },
+        "phoneVerified": {
+          "type": "boolean"
+        },
+        "phoneReserve": {
+          "type": ["null", "string"]
+        },
+        "phoneReserveVerified": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": ["null", "string"]
+        },
+        "emailVerified": {
+          "type": "boolean"
+        },
+        "emailReserve": {
+          "type": ["null", "string"]
+        },
+        "emailReserveVerified": {
+          "type": "boolean"
+        },
+        "codewordGreen": {
+          "type": ["null", "string"]
+        },
+        "codewordRed": {
+          "type": ["null", "string"]
+        },
+        "OTPAdded": {
+          "type": "boolean"
+        },
+        "securityLevel": {
+          "type": "integer"
+        },
+				"created_at": {
+					"type": "string"
+				}
+      },
+      "required": [
+        "username",
+        "statusID",
+        "status",
+        "firstName",
+        "lastName",
+        "tgUsername",
+        "tgVerified",
+        "tgUsernameReserve",
+        "tgReserveVerified",
+        "phone",
+        "phoneVerified",
+        "phoneReserve",
+        "phoneReserveVerified",
+        "email",
+        "emailVerified",
+        "emailReserve",
+        "emailReserveVerified",
+        "codewordGreen",
+        "codewordRed",
+        "OTPAdded",
+        "securityLevel"
+      ],
+      "title": "Registered user"
+    }
+  }
+}

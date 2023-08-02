@@ -1,0 +1,21 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1671622086.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "success"
+  ],
+  "properties": {
+    "success": {
+      "$id": "#root/success",
+      "title": "Success",
+      "type": "boolean",
+      "examples": [
+        true
+      ],
+      "default": true
+    }
+  }
+}

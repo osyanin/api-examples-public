@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalLen": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "publicID": {
+              "type": "string"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "userID": {
+              "type": "integer"
+            },
+            "userPrivateName": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "number"
+            },
+            "statusName": {
+              "type": "string"
+            },
+            "orderType": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "amountFrom": {
+              "type": "string"
+            },
+            "currencyFromID": {
+              "type": "integer"
+            },
+            "currencyToID": {
+              "type": "integer"
+            },
+            "direction": {
+              "type": "string"
+            },
+            "walletFromName": {
+              "type": "string"
+            },
+            "walletToName": {
+              "type": "string"
+            },
+            "walletFromID": {
+              "type": "integer"
+            },
+            "walletToID": {
+              "type": "integer"
+            },
+            "commission": {
+              "type": "string"
+            },
+            "display_rate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "publicID",
+            "ID",
+            "userID",
+            "userPrivateName",
+            "createdAt",
+            "statusName",
+            "orderType",
+            "amount",
+            "amountFrom",
+            "currencyFromID",
+            "currencyToID",
+            "direction",
+            "walletFromName",
+            "walletToName",
+            "walletFromID",
+            "walletToID",
+            "commission",
+            "display_rate"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "totalLen",
+    "data"
+  ]
+}

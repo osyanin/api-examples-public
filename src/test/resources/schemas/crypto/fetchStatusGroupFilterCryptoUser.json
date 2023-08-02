@@ -1,0 +1,49 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1672048632.json",
+	"title": "Root",
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items",
+		"title": "Items",
+		"type": "object",
+		"required": [
+			"ID",
+			"name",
+			"color"
+		],
+		"properties": {
+			"ID": {
+				"$id": "#root/items/ID",
+				"title": "Id",
+				"type": "integer",
+				"examples": [
+					7
+				],
+				"default": 0
+			},
+			"name": {
+				"$id": "#root/items/name",
+				"title": "Name",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"В обработке"
+				],
+				"pattern": "^.*$"
+			},
+			"color": {
+				"$id": "#root/items/color",
+				"title": "Color",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"#afc41b"
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+}

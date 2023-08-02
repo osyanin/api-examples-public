@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "rateCalc": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "rule_text": {
+      "type": "string"
+    },
+    "calculated_amount": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "rateCalc",
+    "rate",
+    "rule",
+    "rule_text",
+    "calculated_amount"
+  ]
+}

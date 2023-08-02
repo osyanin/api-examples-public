@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "integer"
+      },
+      "walletName": {
+        "type": "string"
+      },
+      "accountName": {
+        "type": "string"
+      },
+      "currencyID": {
+        "type": "integer"
+      },
+      "currencyName": {
+        "type": "string"
+      },
+      "currencyType": {
+        "type": "integer"
+      },
+      "isMain": {
+        "type": "boolean"
+      },
+      "freeBalance": {
+        "type": "string"
+      },
+      "coldBalance": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ID",
+      "walletName",
+      "accountName",
+      "currencyID",
+      "currencyName",
+      "currencyType",
+      "isMain",
+      "freeBalance",
+      "coldBalance"
+    ]
+  }
+}

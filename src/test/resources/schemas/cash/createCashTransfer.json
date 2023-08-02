@@ -1,0 +1,32 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1671461442.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "success",
+    "publicID"
+  ],
+  "properties": {
+    "success": {
+      "$id": "#root/success",
+      "title": "Success",
+      "type": "boolean",
+      "examples": [
+        true
+      ],
+      "default": true
+    },
+    "publicID": {
+      "$id": "#root/publicID",
+      "title": "Publicid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "H-a83a-f036e04f3e8b"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}

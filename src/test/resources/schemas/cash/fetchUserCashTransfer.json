@@ -1,0 +1,188 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1671451795.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "totalLen",
+    "data"
+  ],
+  "properties": {
+    "totalLen": {
+      "$id": "#root/totalLen",
+      "title": "Totallen",
+      "type": "integer",
+      "examples": [
+        1
+      ],
+      "default": 0
+    },
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "ID",
+          "publicID",
+          "createdAt",
+          "completionDate",
+          "statusName",
+          "orderType",
+          "amount",
+          "currencyID",
+          "direction",
+          "vaultName",
+          "cityName",
+          "commission",
+          "clientComment",
+          "publicComment"
+        ],
+        "properties": {
+          "ID": {
+            "$id": "#root/data/items/ID",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              3009290
+            ],
+            "default": 0
+          },
+          "publicID": {
+            "$id": "#root/data/items/publicID",
+            "title": "Publicid",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "H-80ec-11eeb0d36988"
+            ],
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "$id": "#root/data/items/createdAt",
+            "title": "Createdat",
+            "type": "integer",
+            "examples": [
+              1669719693
+            ],
+            "default": 0
+          },
+          "completionDate": {
+            "$id": "#root/data/items/completionDate",
+            "title": "Completiondate",
+            "type": "integer",
+            "examples": [
+              0
+            ],
+            "default": 0
+          },
+          "statusName": {
+            "$id": "#root/data/items/statusName",
+            "title": "Statusname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Исполнен (внесение)"
+            ],
+            "pattern": "^.*$"
+          },
+          "orderType": {
+            "$id": "#root/data/items/orderType",
+            "title": "Ordertype",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Внесение наличных"
+            ],
+            "pattern": "^.*$"
+          },
+          "amount": {
+            "$id": "#root/data/items/amount",
+            "title": "Amount",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "5000"
+            ],
+            "pattern": "^.*$"
+          },
+          "currencyID": {
+            "$id": "#root/data/items/currencyID",
+            "title": "Currencyid",
+            "type": "integer",
+            "examples": [
+              5
+            ],
+            "default": 0
+          },
+          "direction": {
+            "$id": "#root/data/items/direction",
+            "title": "Direction",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "RUB"
+            ],
+            "pattern": "^.*$"
+          },
+          "vaultName": {
+            "$id": "#root/data/items/vaultName",
+            "title": "Vaultname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москва, Пресненская набережная, д. 12 - Башня Федерация"
+            ],
+            "pattern": "^.*$"
+          },
+          "cityName": {
+            "$id": "#root/data/items/cityName",
+            "title": "Cityname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москва"
+            ],
+            "pattern": "^.*$"
+          },
+          "commission": {
+            "$id": "#root/data/items/commission",
+            "title": "Commission",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "0"
+            ],
+            "pattern": "^.*$"
+          },
+          "clientComment": {
+            "$id": "#root/data/items/clientComment",
+            "title": "Clientcomment",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Тестовая заявка"
+            ],
+            "pattern": "^.*$"
+          },
+          "publicComment": {
+            "$id": "#root/data/items/publicComment",
+            "title": "Publiccomment",
+            "type": "string",
+            "default": "",
+            "examples": [
+              ""
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

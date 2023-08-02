@@ -1,0 +1,156 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1672131726.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "totalLen",
+    "data"
+  ],
+  "properties": {
+    "totalLen": {
+      "$id": "#root/totalLen",
+      "title": "Totallen",
+      "type": "integer",
+      "examples": [
+        13
+      ],
+      "default": 0
+    },
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "publicID",
+          "ID",
+          "createdAt",
+          "statusName",
+          "orderType",
+          "amount",
+          "currencyID",
+          "direction",
+          "targetWallet",
+          "transactionID",
+          "commission"
+        ],
+        "properties": {
+          "publicID": {
+            "$id": "#root/data/items/publicID",
+            "title": "Publicid",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "K-8a41-4b8a53e00d8c"
+            ],
+            "pattern": "^.*$"
+          },
+          "ID": {
+            "$id": "#root/data/items/ID",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              1458
+            ],
+            "default": 0
+          },
+          "createdAt": {
+            "$id": "#root/data/items/createdAt",
+            "title": "Createdat",
+            "type": "number",
+            "examples": [
+              1669642305.559629
+            ],
+            "default": 0.0
+          },
+          "statusName": {
+            "$id": "#root/data/items/statusName",
+            "title": "Statusname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Исполнен (ввод)"
+            ],
+            "pattern": "^.*$"
+          },
+          "orderType": {
+            "$id": "#root/data/items/orderType",
+            "title": "Ordertype",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Ввод крипто"
+            ],
+            "pattern": "^.*$"
+          },
+          "amount": {
+            "$id": "#root/data/items/amount",
+            "title": "Amount",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "50"
+            ],
+            "pattern": "^.*$"
+          },
+          "currencyID": {
+            "$id": "#root/data/items/currencyID",
+            "title": "Currencyid",
+            "type": "integer",
+            "examples": [
+              9
+            ],
+            "default": 0
+          },
+          "direction": {
+            "$id": "#root/data/items/direction",
+            "title": "Direction",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "USDTTRC20"
+            ],
+            "pattern": "^.*$"
+          },
+          "targetWallet": {
+            "$id": "#root/data/items/targetWallet",
+            "title": "Targetwallet",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "TUTpUS1uizwdMAhSPQ5CzHR7xEgXaqmbWk"
+            ],
+            "pattern": "^.*$"
+          },
+          "transactionID": {
+            "$id": "#root/data/items/transactionID",
+            "title": "Transactionid",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "cf71f704576aa07e08362b46473c025dd1c7cd1f921d4591f5be7439f1c6fdc4"
+            ],
+            "pattern": "^.*$"
+          },
+          "commission": {
+            "$id": "#root/data/items/commission",
+            "title": "Commission",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "0"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

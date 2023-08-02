@@ -1,0 +1,29 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1677058697.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "success",
+    "cause"
+  ],
+  "properties": {
+    "success": {
+      "$id": "#root/success",
+      "title": "Success",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "cause": {
+      "$id": "#root/cause",
+      "title": "Cause",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "publicID": {
+      "type": "string"
+    },
+    "serviceOrderID": {
+      "type": "string"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "userPrivateName": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "currencyName": {
+      "type": "string"
+    },
+    "currencyID": {
+      "type": "integer"
+    },
+    "directionName": {
+      "type": "string"
+    },
+    "statusName": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "updatedAt": {
+      "type": "integer"
+    },
+    "userWalletName": {
+      "type": "string"
+    },
+    "commission": {
+      "type": "string"
+    },
+    "paymentURL": {
+      "type": "string"
+    },
+    "recipient": {
+      "type": "null"
+    },
+    "payedTime": {
+      "type": ["null", "integer"]
+    },
+    "successAmount": {
+      "type": ["null", "string"]
+    },
+    "waitingAmount": {
+      "type": ["null", "string"]
+    },
+    "failedAmount": {
+      "type": ["null", "string"]
+    },
+    "serviceStatusName": {
+      "type": ["null", "string"]
+    },
+    "statusID": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "publicID",
+    "serviceOrderID",
+    "userID",
+    "userPrivateName",
+    "amount",
+    "currencyName",
+    "currencyID",
+    "directionName",
+    "statusName",
+    "createdAt",
+    "updatedAt",
+    "userWalletName",
+    "commission",
+    "paymentURL",
+    "recipient",
+    "payedTime",
+    "successAmount",
+    "waitingAmount",
+    "failedAmount",
+    "serviceStatusName",
+    "statusID"
+  ]
+}

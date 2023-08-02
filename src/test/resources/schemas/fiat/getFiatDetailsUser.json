@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "publicID": {
+      "type": "string"
+    },
+    "userPrivateName": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "currencyName": {
+      "type": "string"
+    },
+    "currencyID": {
+      "type": "integer"
+    },
+    "directionName": {
+      "type": "string"
+    },
+    "statusName": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "updatedAt": {
+      "type": "integer"
+    },
+    "userWalletName": {
+      "type": "string"
+    },
+    "commission": {
+      "type": "string"
+    },
+    "paymentURL": {
+      "type": "string"
+    },
+    "recipient": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "publicID",
+    "userPrivateName",
+    "amount",
+    "currencyName",
+    "currencyID",
+    "directionName",
+    "statusName",
+    "createdAt",
+    "updatedAt",
+    "userWalletName",
+    "commission",
+    "paymentURL",
+    "recipient"
+  ]
+}

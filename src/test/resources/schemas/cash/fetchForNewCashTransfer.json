@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome10",
+  "definitions": {
+    "Welcome10": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assetList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AssetList"
+          }
+        },
+        "fiatList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FiatList"
+          }
+        },
+        "deliveryAddresses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DeliveryAddress"
+          }
+        }
+      },
+      "required": [
+        "assetList",
+        "deliveryAddresses",
+        "fiatList"
+      ],
+      "title": "Welcome10"
+    },
+    "AssetList": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "network": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "network"
+      ],
+      "title": "AssetList"
+    },
+    "DeliveryAddress": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "address": {
+          "type": "string"
+        },
+        "address_url": {
+          "type": "string",
+          "format": "integer"
+        },
+        "available": {
+          "type": "boolean"
+        },
+        "city_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "address",
+        "address_url",
+        "available",
+        "city_id",
+        "id"
+      ],
+      "title": "DeliveryAddress"
+    },
+    "FiatList": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "available_to_delivery": {
+          "type": "boolean"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string",
+          "format": "integer"
+        },
+        "system_name": {
+          "type": "string"
+        },
+        "name_user": {
+          "type": "string"
+        },
+        "name_admin": {
+          "type": "string"
+        },
+        "description_user": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "description_admin": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "action_name_user": {
+          "type": "string"
+        },
+        "action_name_admin": {
+          "type": "string"
+        },
+        "system_action": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "group_id": {
+          "type": "integer"
+        },
+        "can_update_by_group": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "group_id_user": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "FiatList"
+    }
+  }
+}

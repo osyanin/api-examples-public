@@ -1,0 +1,60 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1672129998.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "createdAt",
+          "address",
+          "image"
+        ],
+        "properties": {
+          "createdAt": {
+            "$id": "#root/data/items/createdAt",
+            "title": "Createdat",
+            "type": "number",
+            "examples": [
+              1669641851.43145
+            ],
+            "default": 0.0
+          },
+          "address": {
+            "$id": "#root/data/items/address",
+            "title": "Address",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "TUTpUS1uizwdMAhSPQ5CzHR7xEgXaqmbWk"
+            ],
+            "pattern": "^.*$"
+          },
+          "image": {
+            "$id": "#root/data/items/image",
+            "title": "Image",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAABlBMVEX///8AAABVwtN+AAABn0lEQVR42uyYP660MAzEJ6KgzBFyFI6WHC1H4QiUKVDm0zggePu07aeHhZsV0W+L+M/YDl577bU/a5GyFivCbgf9PPIFrACmhoXcgWTwceQLWNgHwBbJch05BGLNwExWhds10CduyS9gKRxJTOS6lC9p/3Tg1Kgc9nlLNYf2RcQeDVxcx7xhYf/aeJ4MKLZ9ImsOtHCrhBX79ihAX/op9rnoJ32G+/mAzkhuyBx+CA2p3mrTByA/hN2SdmpILFJa5EBfgGKrr9FWVkA+AbjDFaBLc0esVsKsues/xR2g+W7S3YWtC4Ny+6dGOQCgVrkPjbKGEhT07A0YV2+HUql4NST8yGovQMc80hnXFOQMAKS76jgYxRvkjdvo7gaA5TM0MiTSxqQS6AuIWjHPtVoHNreXcJPiBwCX4Fo0qSnoeBDxBFx7VrdCLVLaj47jAThX5Cwhsq1Zfgj3+cEFMMY8c4cBFvT7OukIgDaUFlkzx4PPr5c9JwCOrMbnCuMEOJ+v+qjkPtMjcGjUeDBI6pgG/JLiZwOvvfbaf7d/AQAA//8Wtl2CIoE/mAAAAABJRU5ErkJggg=="
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

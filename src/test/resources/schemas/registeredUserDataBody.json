@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome8",
+  "definitions": {
+    "Welcome8": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "sessionKey": {
+          "type": "string"
+        },
+        "UserID": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "message",
+        "success",
+        "sessionKey",
+        "UserID"
+      ],
+
+      "title": "registeredUser"
+    }
+  }
+}

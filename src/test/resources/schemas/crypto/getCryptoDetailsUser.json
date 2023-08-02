@@ -1,0 +1,183 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1672142159.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "directionName",
+    "currencyName",
+    "statusName",
+    "amount",
+    "createdAt",
+    "updatedAt",
+    "userID",
+    "privateName",
+    "userWalletID",
+    "userWalletName",
+    "userWalletNumber",
+    "serviceName",
+    "transactionID",
+    "targetWalletAddress",
+    "userStatus",
+    "publicID"
+  ],
+  "properties": {
+    "directionName": {
+      "$id": "#root/directionName",
+      "title": "Directionname",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "CashIn"
+      ],
+      "pattern": "^.*$"
+    },
+    "currencyName": {
+      "$id": "#root/currencyName",
+      "title": "Currencyname",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "USDTTRC20"
+      ],
+      "pattern": "^.*$"
+    },
+    "statusName": {
+      "$id": "#root/statusName",
+      "title": "Statusname",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Исполнен (ввод)"
+      ],
+      "pattern": "^.*$"
+    },
+    "amount": {
+      "$id": "#root/amount",
+      "title": "Amount",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "50"
+      ],
+      "pattern": "^.*$"
+    },
+    "createdAt": {
+      "$id": "#root/createdAt",
+      "title": "Createdat",
+      "type": "integer",
+      "examples": [
+        1669642305
+      ],
+      "default": 0
+    },
+    "updatedAt": {
+      "$id": "#root/updatedAt",
+      "title": "Updatedat",
+      "type": "integer",
+      "examples": [
+        1669642305
+      ],
+      "default": 0
+    },
+    "userID": {
+      "$id": "#root/userID",
+      "title": "Userid",
+      "type": "integer",
+      "examples": [
+        453
+      ],
+      "default": 0
+    },
+    "privateName": {
+      "$id": "#root/privateName",
+      "title": "Privatename",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "osyanin"
+      ],
+      "pattern": "^.*$"
+    },
+    "userWalletID": {
+      "$id": "#root/userWalletID",
+      "title": "Userwalletid",
+      "type": "integer",
+      "examples": [
+        2877
+      ],
+      "default": 0
+    },
+    "userWalletName": {
+      "$id": "#root/userWalletName",
+      "title": "Userwalletname",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Основной USDTTRC20"
+      ],
+      "pattern": "^.*$"
+    },
+    "userWalletNumber": {
+      "$id": "#root/userWalletNumber",
+      "title": "Userwalletnumber",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "400400100000453"
+      ],
+      "pattern": "^.*$"
+    },
+    "serviceName": {
+      "$id": "#root/serviceName",
+      "title": "Servicename",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "TRN"
+      ],
+      "pattern": "^.*$"
+    },
+    "transactionID": {
+      "$id": "#root/transactionID",
+      "title": "Transactionid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "cf71f704576aa07e08362b46473c025dd1c7cd1f921d4591f5be7439f1c6fdc4"
+      ],
+      "pattern": "^.*$"
+    },
+    "targetWalletAddress": {
+      "$id": "#root/targetWalletAddress",
+      "title": "Targetwalletaddress",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "TUTpUS1uizwdMAhSPQ5CzHR7xEgXaqmbWk"
+      ],
+      "pattern": "^.*$"
+    },
+    "userStatus": {
+      "$id": "#root/userStatus",
+      "title": "Userstatus",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Обычный"
+      ],
+      "pattern": "^.*$"
+    },
+    "publicID": {
+      "$id": "#root/publicID",
+      "title": "Publicid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "K-8a41-4b8a53e00d8c"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}

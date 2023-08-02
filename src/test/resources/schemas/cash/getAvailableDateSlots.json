@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1671448186.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "meetTimeFrom",
+      "meetTimeTo"
+    ],
+    "properties": {
+      "meetTimeFrom": {
+        "$id": "#root/items/meetTimeFrom",
+        "title": "Meettimefrom",
+        "type": "integer",
+        "examples": [
+          1672041600
+        ],
+        "default": 0
+      },
+      "meetTimeTo": {
+        "$id": "#root/items/meetTimeTo",
+        "title": "Meettimeto",
+        "type": "integer",
+        "examples": [
+          1672042500
+        ],
+        "default": 0
+      }
+    }
+  }
+
+}

@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "currencyID": {
+      "type": "integer"
+    },
+    "currencyName": {
+      "type": "string"
+    },
+    "currencyToID": {
+      "type": "integer"
+    },
+    "currencyToName": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "publicID": {
+      "type": "string"
+    },
+    "exchangeDirectionID": {
+      "type": "integer"
+    },
+    "directionName": {
+      "type": "string"
+    },
+    "amountTo": {
+      "type": "string"
+    },
+    "amountFrom": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "updatedAt": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "privateName": {
+      "type": "string"
+    },
+    "walletFromID": {
+      "type": "integer"
+    },
+    "walletFromName": {
+      "type": "string"
+    },
+    "walletFromNumber": {
+      "type": "string"
+    },
+    "walletID": {
+      "type": "integer"
+    },
+    "walletToName": {
+      "type": "string"
+    },
+    "walletToNumber": {
+      "type": "string"
+    },
+    "statusGroupID": {
+      "type": "integer"
+    },
+    "statusGroupName": {
+      "type": "string"
+    },
+    "statusGroupNameAdmin": {
+      "type": "string"
+    },
+    "statusID": {
+      "type": "integer"
+    },
+    "statusName": {
+      "type": "string"
+    },
+    "statusGroupIDUser": {
+      "type": "integer"
+    },
+    "statusGroupUserName": {
+      "type": "string"
+    },
+    "statusGroupNameUserAdmin": {
+      "type": "string"
+    },
+    "entryID": {
+      "type": "integer"
+    },
+    "operationType": {
+      "type": "integer"
+    },
+    "operationTypeNameAdmin": {
+      "type": "string"
+    },
+    "operationTypeName": {
+      "type": "string"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "rule_text": {
+      "type": "string"
+    },
+    "commission": {
+      "type": "string"
+    },
+    "beforeStatus": {
+      "type": "null"
+    },
+    "afterStatus": {
+      "type": "null"
+    },
+    "lastAdminLogin": {
+      "type": "string"
+    },
+    "lastAdminID": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "currencyID",
+    "currencyName",
+    "currencyToID",
+    "currencyToName",
+    "rate",
+    "publicID",
+    "exchangeDirectionID",
+    "directionName",
+    "amountTo",
+    "amountFrom",
+    "comment",
+    "createdAt",
+    "updatedAt",
+    "userID",
+    "privateName",
+    "walletFromID",
+    "walletFromName",
+    "walletFromNumber",
+    "walletID",
+    "walletToName",
+    "walletToNumber",
+    "statusGroupID",
+    "statusGroupName",
+    "statusGroupNameAdmin",
+    "statusID",
+    "statusName",
+    "statusGroupIDUser",
+    "statusGroupUserName",
+    "statusGroupNameUserAdmin",
+    "entryID",
+    "operationType",
+    "operationTypeNameAdmin",
+    "operationTypeName",
+    "rule",
+    "rule_text",
+    "commission",
+    "beforeStatus",
+    "afterStatus",
+    "lastAdminLogin",
+    "lastAdminID"
+  ]
+}

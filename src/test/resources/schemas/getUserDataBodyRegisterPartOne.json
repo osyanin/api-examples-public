@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome8",
+  "definitions": {
+    "Welcome8": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "statusID": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "null"
+        },
+        "lastName": {
+          "type": "null"
+        },
+        "tgUsername": {
+          "type": "null"
+        },
+        "tgVerified": {
+          "type": "boolean"
+        },
+        "tgUsernameReserve": {
+          "type": "null"
+        },
+        "tgReserveVerified": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "null"
+        },
+        "phoneVerified": {
+          "type": "boolean"
+        },
+        "phoneReserve": {
+          "type": "null"
+        },
+        "phoneReserveVerified": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "null"
+        },
+        "emailVerified": {
+          "type": "boolean"
+        },
+        "emailReserve": {
+          "type": "null"
+        },
+        "emailReserveVerified": {
+          "type": "boolean"
+        },
+        "codewordGreen": {
+          "type": "null"
+        },
+        "codewordRed": {
+          "type": "null"
+        },
+        "OTPAdded": {
+          "type": "boolean"
+        },
+        "securityLevel": {
+          "type": "integer"
+        },
+				"created_at": {
+					"type": "string"
+				}
+      },
+      "required": [
+        "username",
+        "statusID",
+        "status",
+        "firstName",
+        "lastName",
+        "tgUsername",
+        "tgVerified",
+        "tgUsernameReserve",
+        "tgReserveVerified",
+        "phone",
+        "phoneVerified",
+        "phoneReserve",
+        "phoneReserveVerified",
+        "email",
+        "emailVerified",
+        "emailReserve",
+        "emailReserveVerified",
+        "codewordGreen",
+        "codewordRed",
+        "OTPAdded",
+        "securityLevel"
+      ],
+      "title": "RegistrationPartOneProfile"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome7",
+  "definitions": {
+    "Welcome7": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "totalLen": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        }
+      },
+      "required": [
+        "data",
+        "totalLen"
+      ],
+      "title": "Welcome7"
+    },
+    "Datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "orderID": {
+          "type": "integer"
+        },
+        "publicID": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "integer"
+        },
+        "updatedAt": {
+          "type": "integer"
+        },
+        "meetTimeFrom": {
+          "type": "integer"
+        },
+        "meetTimeTo": {
+          "type": "integer"
+        },
+        "orderType": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "string",
+          "format": "integer"
+        },
+        "currencyID": {
+          "type": "integer"
+        },
+        "direction": {
+          "type": "string"
+        },
+        "statusName": {
+          "type": "string"
+        },
+        "cityName": {
+          "type": "string"
+        },
+        "userID": {
+          "type": "integer"
+        },
+        "userPrivateName": {
+          "type": "string"
+        },
+        "rate": {
+          "type": "string",
+          "format": "integer"
+        },
+        "percentage": {
+          "type": "integer"
+        },
+        "commission": {
+          "type": "string",
+          "format": "integer"
+        },
+        "banknotesid": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "clientComment": {
+          "type": "string"
+        },
+        "internalComment": {
+          "type": "string"
+        },
+        "publicComment": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "banknotesid",
+        "cityName",
+        "clientComment",
+        "commission",
+        "createdAt",
+        "currencyID",
+        "direction",
+        "internalComment",
+        "meetTimeFrom",
+        "meetTimeTo",
+        "orderID",
+        "orderType",
+        "percentage",
+        "publicComment",
+        "publicID",
+        "rate",
+        "statusName",
+        "updatedAt",
+        "userID",
+        "userPrivateName"
+      ],
+      "title": "Datum"
+    }
+  }
+}

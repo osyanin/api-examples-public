@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "currencyFromName": {
+      "type": "string"
+    },
+    "currencyToName": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "publicID": {
+      "type": "string"
+    },
+    "directionName": {
+      "type": "string"
+    },
+    "amountTo": {
+      "type": "string"
+    },
+    "amountFrom": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "commission": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "updatedAt": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "privateName": {
+      "type": "string"
+    },
+    "walletFromID": {
+      "type": "integer"
+    },
+    "walletFromName": {
+      "type": "string"
+    },
+    "walletFromNumber": {
+      "type": "string"
+    },
+    "walletID": {
+      "type": "integer"
+    },
+    "walletToName": {
+      "type": "string"
+    },
+    "walletToNumber": {
+      "type": "string"
+    },
+    "statusGroupName": {
+      "type": "string"
+    },
+    "statusName": {
+      "type": "string"
+    },
+    "statusGroupUserName": {
+      "type": "string"
+    },
+    "operationTypeName": {
+      "type": "string"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "rule_text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "currencyFromName",
+    "currencyToName",
+    "rate",
+    "publicID",
+    "directionName",
+    "amountTo",
+    "amountFrom",
+    "comment",
+    "commission",
+    "createdAt",
+    "updatedAt",
+    "userID",
+    "privateName",
+    "walletFromID",
+    "walletFromName",
+    "walletFromNumber",
+    "walletID",
+    "walletToName",
+    "walletToNumber",
+    "statusGroupName",
+    "statusName",
+    "statusGroupUserName",
+    "operationTypeName",
+    "rule",
+    "rule_text"
+  ]
+}

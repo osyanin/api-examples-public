@@ -1,0 +1,171 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1674231278.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "totalLen",
+    "data"
+  ],
+  "properties": {
+    "totalLen": {
+      "$id": "#root/totalLen",
+      "title": "Totallen",
+      "type": "integer",
+      "default": 0
+    },
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "orderID",
+          "publicID",
+          "createdAt",
+          "updatedAt",
+          "orderType",
+          "amount",
+          "currencyID",
+          "direction",
+          "statusName",
+          "userPrivateName",
+          "userID",
+          "targetWallet",
+          "transactionID",
+          "rate",
+          "percentage",
+          "commission",
+          "adminID",
+          "adminUsername"
+        ],
+        "properties": {
+          "orderID": {
+            "$id": "#root/data/items/orderID",
+            "title": "Orderid",
+            "type": "integer",
+            "default": 0
+          },
+          "publicID": {
+            "$id": "#root/data/items/publicID",
+            "title": "Publicid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "$id": "#root/data/items/createdAt",
+            "title": "Createdat",
+            "type": "integer",
+            "default": 0
+          },
+          "updatedAt": {
+            "$id": "#root/data/items/updatedAt",
+            "title": "Updatedat",
+            "type": "integer",
+            "default": 0
+          },
+          "orderType": {
+            "$id": "#root/data/items/orderType",
+            "title": "Ordertype",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "amount": {
+            "$id": "#root/data/items/amount",
+            "title": "Amount",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "currencyID": {
+            "$id": "#root/data/items/currencyID",
+            "title": "Currencyid",
+            "type": "integer",
+            "default": 0
+          },
+          "direction": {
+            "$id": "#root/data/items/direction",
+            "title": "Direction",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "statusName": {
+            "$id": "#root/data/items/statusName",
+            "title": "Statusname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "userPrivateName": {
+            "$id": "#root/data/items/userPrivateName",
+            "title": "Userprivatename",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "userID": {
+            "$id": "#root/data/items/userID",
+            "title": "Userid",
+            "type": "integer",
+            "default": 0
+          },
+          "targetWallet": {
+            "$id": "#root/data/items/targetWallet",
+            "title": "Targetwallet",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "transactionID": {
+            "$id": "#root/data/items/transactionID",
+            "title": "Transactionid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "rate": {
+            "$id": "#root/data/items/rate",
+            "title": "Rate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "percentage": {
+            "$id": "#root/data/items/percentage",
+            "title": "Percentage",
+            "type": "integer",
+            "default": 0
+          },
+          "commission": {
+            "$id": "#root/data/items/commission",
+            "title": "Commission",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "adminID": {
+            "$id": "#root/data/items/adminID",
+            "title": "Adminid",
+            "type": "null",
+            "default": null
+          },
+          "adminUsername": {
+            "$id": "#root/data/items/adminUsername",
+            "title": "Adminusername",
+            "type": "null",
+            "default": null
+          }
+        }
+      }
+
+    }
+  }
+}

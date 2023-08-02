@@ -1,0 +1,84 @@
+image: gradle:jdk17
+
+stages:
+  - sonar
+  - tests_happy
+  - allure_happy
+  - tests_negative
+  - allure_negative
+
+sonarqube-check:
+  stage: sonar
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script: 
+    - echo "Devnum is $DEV"
+    - gradle sonar --info
+  allow_failure: true
+  rules:
+    - if: $DEV == "DEV" && $CI_COMMIT_BRANCH == "master"
+
+api_test:
+  stage: tests_happy
+  allow_failure: true
+  script:
+    - echo "Devnum is $DEV"
+    - gradle clean test --tests api.happy.* --info -Dconf=${DEV}
+  artifacts:
+    when: always
+    paths:
+      - build/allure-results
+
+allure_report:
+  stage: allure_happy
+  dependencies:
+    - api_test
+  script:
+    - echo "Devnum is $DEV"
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo -e "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+    - chmod 600 $PRIVATE_KEY
+    - ssh-add $PRIVATE_KEY
+    - scp -i $PRIVATE_KEY -r root@65.109.113.38:/var/www/Allure/allure-report-${DEV}/history ./build/allure-results
+    - gradle allureReport
+    - ssh -i $PRIVATE_KEY root@65.109.113.38 'rm -rf /var/www/Allure/allure-report-${DEV}'
+    - scp -i $PRIVATE_KEY -r build/reports/allure-report/allureReport/* root@65.109.113.38:/var/www/Allure/allure-report-${DEV}/
+    - java -DconfigFile=conf/${DEV}NotificationsHappy.json -jar allure-notifications-4.2.0.jar
+  artifacts:
+    when: always
+
+api_negative_test:
+  stage: tests_negative
+  allow_failure: true
+  script:
+    - echo "Devnum is $DEV"
+    - gradle clean test --tests api.negative.* --info -Dconf=${DEV}
+  artifacts:
+    when: always
+    paths:
+      - build/allure-results
+
+allure_report_negatives:
+  stage: allure_negative
+  dependencies:
+    - api_negative_test
+  script:
+    - echo "Devnum is $DEV"
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo -e "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+    - chmod 600 $PRIVATE_KEY
+    - ssh-add $PRIVATE_KEY
+    - scp -i $PRIVATE_KEY -r root@65.109.113.38:/var/www/Allure/allure-report-negative-${DEV}/history ./build/allure-results
+    - gradle allureReport
+    - ssh -i $PRIVATE_KEY root@65.109.113.38 'rm -rf /var/www/Allure/allure-report-negative-${DEV}'
+    - scp -i $PRIVATE_KEY -r build/reports/allure-report/allureReport/* root@65.109.113.38:/var/www/Allure/allure-report-negative-${DEV}/
+    - java -DconfigFile=conf/${DEV}NotificationsNegative.json -jar allure-notifications-4.2.0.jar
+  artifacts:
+    when: always

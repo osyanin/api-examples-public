@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalLen": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "orderID": {
+              "type": "integer"
+            },
+            "publicID": {
+              "type": "string"
+            },
+            "userID": {
+              "type": "integer"
+            },
+            "userPrivateName": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "statusName": {
+              "type": "string"
+            },
+            "currencyName": {
+              "type": "string"
+            },
+            "directionName": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "integer"
+            },
+            "updatedAt": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "orderID",
+            "publicID",
+            "userID",
+            "userPrivateName",
+            "amount",
+            "statusName",
+            "currencyName",
+            "directionName",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "totalLen",
+    "data"
+  ]
+}
